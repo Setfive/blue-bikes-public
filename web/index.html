@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>Setfive: BlueBikes Project</title>
+
+    <style>
+        .metric-box {
+            text-align: center;
+            border: 1px solid #ddd;
+            height: 25vh;
+        }
+
+        .metric-name {
+            font-size: 1.5rem;
+            text-transform: uppercase;
+        }
+
+        .metric {
+            font-size: 3rem;
+            font-weight: bold;
+            color: #003366;
+        }
+
+        .metric-popular-route {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #003366;
+        }
+
+        .metric-popular-route em {
+            color: #ccc;
+        }
+
+        .table-weekdays {
+            table-layout: fixed;
+        }
+
+        .table-weekdays td {
+            border: 0;
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="row mt-5">
+        <div class="col-sm-12">
+            <div class="text-center">
+                <div class="metric-name">
+                    Most Popular Route:
+                </div>
+                <div class="mt-1 metric-popular-route">
+                    <div id="mostPopularRoute">??</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row mt-4">
+        <div class="col-sm-6">
+            <div class="metric-box d-flex flex-column">
+                <div class="metric mb-1" id="medianTripTime">??</div>
+                <div class="metric-name flex-grow-1">
+                    Median Trip Time
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="metric-box d-flex flex-column">
+                <div class="metric mb-1" id="avgBirthYear">??</div>
+                <div class="metric-name flex-grow-1">
+                    Average Birth Year
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row mt-3">
+        <div class="col-sm-12">
+            <table class="table table-weekdays table-sm">
+                <tr>
+                    <td>Monday</td>
+                    <td id="monday">
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 0%"></div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Tuesday</td>
+                    <td id="tuesday">
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 0%"></div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Wednesday</td>
+                    <td id="wednesday">
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 0%"></div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Thursday</td>
+                    <td id="thursday">
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 0%"></div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Friday</td>
+                    <td id="friday">
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 0%"></div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Saturday</td>
+                    <td id="saturday">
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 0%"></div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Sunday</td>
+                    <td id="sunday">
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 0%"></div>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+<script>
+$(document).ready(function(){
+    $.getJSON("/data", function(result) {
+
+    });
+});
+</script>
+
+</body>
+</html>
