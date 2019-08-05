@@ -86,7 +86,11 @@ $ node index.js server
 
 And then load http://127.0.0.1:8080 to view web/index.html 
 
-The goal is to get the data to appear so that it appears the same way as "mockup.png". The numbers in the mockup aren't accurate but the layout reflects what we're looking for.
+The goal is to get the data to appear so that it appears the same way as "mockup.png". 
+
+![mockup](https://raw.githubusercontent.com/Setfive/blue-bikes-public/master/mockup.png)
+
+The numbers in the mockup aren't accurate but the layout reflects what we're looking for.
 
 ## 5. Submit it
 
