@@ -8,7 +8,7 @@ CREATE TABLE `trip` (
 	`start_station_latitude`	TEXT,
 	`start_station_longitude`	TEXT,
 	`end_station_id`	INTEGER,
-	`end_station_name`	INTEGER,
+	`end_station_name`	TEXT,
 	`end_station_latitude`	TEXT,
 	`end_station_longitude`	TEXT,
 	`bikeid` INTEGER,
