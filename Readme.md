@@ -16,7 +16,7 @@ any language you're comfortable with.
 If you chose to use a different language, you'll just need a sqlite driver and a HTTP server to serve back the index.html file.  
 
 ## Before you start...
-* Definitely Don't spend more than 3-4 hours on this
+* Definitely don't spend more than 3-4 hours on this
 * Read this whole document before you start so you can quarterback things out
 * Don't add any libraries to the source files
 * Using StackOverflow is fine but don't blindly copy/paste code
